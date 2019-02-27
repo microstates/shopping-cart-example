@@ -852,6 +852,11 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
+"@microstates/react@0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@microstates/react/-/react-0.12.0.tgz#25608eb7c0de3e0ef047401aa2f1e1075b1a2dc4"
+  integrity sha512-ZSwPl8hypLgDE1bATetavPZF5pZ+l4cW/5Ah+Cgv36GkTpabRNVgcS3ZQwzIqUR5zbYwtr0neSobfl/APjZYbQ==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -4058,6 +4063,13 @@ fsevents@^1.2.3, fsevents@^1.2.7:
     nan "^2.9.2"
     node-pre-gyp "^0.10.0"
 
+funcadelic@^0.5.0:
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/funcadelic/-/funcadelic-0.5.6.tgz#d36d40f61983bd9d46a0e642965d798aba3b1653"
+  integrity sha512-Z+l1FP0jDlYw8TW1AzSg+SFRIG8IwwdCN8LFj3yUO0rge5Yv4XW92XvjFYEFuYSltJ1RWT5cyPo/D6GymRnEkA==
+  dependencies:
+    invariant "2.2.4"
+
 function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
@@ -4730,7 +4742,7 @@ internal-ip@^3.0.1:
     default-gateway "^2.6.0"
     ipaddr.js "^1.5.2"
 
-invariant@^2.2.2, invariant@^2.2.4:
+invariant@2.2.4, invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
@@ -6087,6 +6099,14 @@ micromatch@^3.1.10, micromatch@^3.1.4, micromatch@^3.1.8, micromatch@^3.1.9:
     regex-not "^1.0.0"
     snapdragon "^0.8.1"
     to-regex "^3.0.2"
+
+microstates@0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/microstates/-/microstates-0.13.0.tgz#9b3be37365af474af6453174d9a63583b1a9ff71"
+  integrity sha512-0Wk33/QNUsa2QsOW+xIkePVPYiftVxjoAyn5D6D19m7qKgPdJXN5FcqeWpZI5MViwJztQJQ6UKG8gEVQ3Qn3Rg==
+  dependencies:
+    funcadelic "^0.5.0"
+    symbol-observable "^1.2.0"
 
 miller-rabin@^4.0.0:
   version "4.0.1"
@@ -7906,7 +7926,7 @@ react-dev-utils@^7.0.3:
     strip-ansi "5.0.0"
     text-table "0.2.0"
 
-react-dom@16.8.3:
+react-dom@^16.8.3:
   version "16.8.3"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.3.tgz#ae236029e66210783ac81999d3015dfc475b9c32"
   integrity sha512-ttMem9yJL4/lpItZAQ2NTFAbV7frotHk5DZEHXUOws2rMmrsvh1Na7ThGT0dTzUIl6pqTOi5tYREfL8AEna3lA==
@@ -7981,7 +8001,7 @@ react-scripts@2.1.5:
   optionalDependencies:
     fsevents "1.2.4"
 
-react@16.8.3:
+react@^16.8.3:
   version "16.8.3"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.3.tgz#c6f988a2ce895375de216edcfaedd6b9a76451d9"
   integrity sha512-3UoSIsEq8yTJuSu0luO1QQWYbgGEILm+eJl2QN/VLDi7hL+EN18M3q3oVZwmVzzBJ3DkM7RMdRwBmZZ+b4IzSA==
@@ -9066,6 +9086,11 @@ svgo@^1.0.0, svgo@^1.1.1:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
+
+symbol-observable@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
+  integrity sha512-e900nM8RRtGhlV36KGEU9k65K3mPb1WV70OdjfxlG2EAuM1noi/E/BaW/uMhL7bPEssK8QV57vN3esixjUvcXQ==
 
 symbol-tree@^3.2.2:
   version "3.2.2"
